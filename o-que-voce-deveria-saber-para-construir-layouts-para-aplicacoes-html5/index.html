@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js - The HTML Presentation Framework</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1 style="font-size: 48px;">O que você deveria saber para construir Layouts para aplicações HTML5</h1>
+				</section>
+				<section data-background="img/bg.jpg">
+
+				</section>
+
+				<section>
+					<h1 class="fragment">Layout Fluido</h1>
+					<h1 class="fragment" style="text-decoration:line-through">Layout Fixo</h1>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p class="fragment">* mobile first</p>
+				</section>
+
+				<section>
+					<h1>Unidades de Medidas</h1>
+					<ul>
+						<li style="float:left; width: 300px;">
+							Absolutas
+							<ul>
+								<li>px</li>
+								<li>cm</li>
+								<li>mm</li>
+								<li>pt</li>
+								<li>in</li>
+							</ul>
+						</li>
+						<li  style="float:left; width: 300px;">
+							Relativas
+							<ul>
+								<li>%</li>
+								<li>em</li>
+								<li>rem</li>
+								<li>ex</li>
+								<li>ch</li>
+								<li>vh</li>
+								<li>vw</li>
+								<li>vmin</li>
+								<li>vmax</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h1>View Ports</h1>
+						<h2 class="fragment">e os pixels</h2>
+					</section>
+					<section>
+						<p>Para o web design existem basicamente dois tipos de pixels muito úteis</p>
+						<ul>
+							<li class="fragment">CSS pixel</li>
+							<li class="fragment">pixel físico</li>
+						</ul>
+						<blockquote class="fragment">
+							E para trabalhar com o CSS pixel precisamos usar a viewport
+						</blockquote>
+					</section>
+					<section>
+						<div class="crayon-line" id="crayon-55db9f9a0835d505887857-1"><span class="crayon-o">&lt;</span><span class="crayon-e">meta </span><span class="crayon-v">name</span><span class="crayon-o">=</span><span class="crayon-s">"viewport"</span><span class="crayon-h"> </span><span class="crayon-v">content</span><span class="crayon-o">=</span><span class="crayon-s">"width=device-width,initial-scale=1,user-scalable=no"</span><span class="crayon-o">&gt;</span></div>
+					</section>
+				</section>
+				<section>
+
+					<h1>Só pra lembrar</h1>
+					<ul>
+						<li class="fragment">CSS</li>
+						<li class="fragment">CSS reset</li>
+						<li class="fragment">Imagens responsivas com max-width</li>
+						<li class="fragment">Imagens em vetoriais em SVG</li>
+						<li class="fragment">Box-sizing: border-box</li>
+						<li class="fragment">Margin e Padding</li>
+						<li class="fragment">Positions</li>
+						<li class="fragment">FlexBox</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/css.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-html-dom.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-par-de valores.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-ultima-regra-ganha.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-layout.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-box-model.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-display-inline-vs-block.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-inline-block.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-margin.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-margin-center.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-padding.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-position-relative-absolute.png" alt="">
+				</section>
+
+				<section>
+					<img src="img/css-position-fixed.png" alt="">
+				</section>
+
+				<section>
+					<section>
+						<h1> @media </h1>
+					</section>
+					<section>
+						<ul>
+							<li class="fragment">screen</li>
+							<li class="fragment">projection</li>
+							<li class="fragment">print</li>
+							<li class="fragment">braille</li>
+							<li class="fragment">tv</li>
+							<li class="fragment">tty</li>
+						</ul>
+					</section>
+					<section>
+						<p>
+							O mais usado é o <u>screen</u> seguido do <u>print</u>
+						</p>
+						<p>
+							Com o <u>@media</u> podemos criar <u>breakpoints</u> e colocar nossas regras responsivas em prática.
+						</p>
+						<p class="fragment">Aaaeeeeeeeeeeeeeeeeeeeeee...</p>
+					</section>
+					<section>
+						<h1>*Ooops</h1>
+						<p>
+							Vamos com calma, senão isso se torna uma dor de cabeça
+						</p>
+						<ul>
+							<li class="fragment">Temos que evitar regras muito específicas de CSS</li>
+						</ul>
+					</section>
+
+				</section>
+				<section>
+					<h1>O JavaScript também é muito importante!</h1>
+				</section>
+
+				<section>
+					<h3>Referêncas</h3>
+					<ul>
+						<li>http://willianjusten.com.br/</li>
+						<li>http://blog.da2k.com.br/</li>
+						<li>http://www.raphaelfabeni.com.br/blog/</li>
+						<li>http://www.felipefialho.com/</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Sites bacanas</h2>
+					<ul>
+						<li>tympanus.net/codrops/</li>
+						<li>codyhouse.co/</li>
+						<li>codyhouse.co/</li>
+						<li>tableless.com.br/</li>
+						<li>w3schools.com/</li>
+						<li class="fragment">google.com.br/</li>
+					</ul>
+				</section>
+				<section>
+					<h2>
+						Ferramentas/workflow
+					</h2>
+					<ul>
+						<li>Chrome DevTools</li>
+						<li>Sublime, Atom (e seus infinitos plugins)</li>
+						<li>nodejs (npm e bower)</li>
+						<li>grunt, gulp e npm scripts</li>
+						<li>less sass ou stylus</li>
+						<li>live reload</li>
+					</ul>
+				</section>
+				<section>
+					<h1>?</h1>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+	</html>
