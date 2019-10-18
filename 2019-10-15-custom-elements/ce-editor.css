@@ -1,0 +1,48 @@
+* {
+    font-family: sans-serif;
+}
+
+ce-editor {
+    display: block;
+    border: 1px solid #CBCBCB;
+}
+
+ce-editor [contenteditable="true"] {
+    padding: 4px;
+    outline: none;
+    min-height: 100px;
+}
+
+ce-editor .toolbar {
+    background-color: #F1F2F3;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+ce-editor .toolbar > * {
+    --tamanho: 24px;
+    height: var(--tamanho);
+    width: var(--tamanho);
+    border: none;
+    outline: none;
+    transition: .2s;
+}
+ce-editor .toolbar > *.active {
+    font-weight: 900;
+    background-color: rgb(151, 192, 233);
+}
+
+ce-editor .toolbar > *:hover {
+    background-color: #D5D6D7;
+    cursor: pointer;
+}
+
+ce-editor .toolbar > *:focus {
+    outline: 1px solid #3256e9;
+    outline-offset: -1px;
+    cursor: pointer;
+}
+
+ce-editor .toolbar > *:active {
+    background-color: #3256e9;
+    color: #FFF;
+}
